@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <h2>Age Calculator</h2>
+    <form id="ageCalculatorForm">
+      <label for="dob">Date of Birth:</label>
+      <input
+        type="number"
+        id="dob"
+        name="dob"
+        placeholder="Day"
+        required
+        min="1"
+        max="31"
+      />
+      <input
+        type="number"
+        id="month"
+        name="month"
+        placeholder="Month"
+        required
+        min="1"
+        max="12"
+      />
+      <input
+        type="number"
+        id="year"
+        name="year"
+        placeholder="Year"
+        required
+        min="1900"
+      />
+      <button type="button" onclick="calculateAge()">Calculate Age</button>
+    </form>
+    <p id="ageResult"></p>
+
+    <script src="index.js"></script>
+  </body>
+</html>
